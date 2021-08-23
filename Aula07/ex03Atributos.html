@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="" alt="Bunézin" id="img">
+    <script>
+        // Selecionando o elemento com id "img" - uma imagem
+        let elemento = document.querySelector("#img");
+
+        // Mostrando se tem ou não o atributo "alt"
+        alert(elemento.hasAttribute("alt"));
+
+        // Mostrando o valor do atributo "alt"
+        alert(elemento.getAttribute("alt"));
+
+        // Removendo atributo "alt"
+        elemento.removeAttribute("alt");
+        alert(elemento.hasAttribute("alt"));
+
+        // Setando atributo "alt" com valor "Boné do JSzado"
+        elemento.setAttribute("alt", "Boné do JSzado")
+        alert(elemento.getAttribute("alt"));
+    </script>
+</body>
+</html>
