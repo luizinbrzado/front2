@@ -37,6 +37,7 @@ column.
 
         // 4. Um campo de input text com um placeholder: “Email”.
         let inputEmail = document.createElement("input");
+        inputEmail.setAttribute("type", "email");
         inputEmail.setAttribute("placeholder", "Email");
         inputEmail.style.marginBottom = "10px";
 
@@ -72,7 +73,7 @@ column.
         btnCancel.style.cursor = "pointer";
 
         // 8. Insira a propriedade disabled no campo de Email.
-        inputEmail.setAttribute("disabled", "disabled");
+        // inputEmail.setAttribute("disabled", "disabled");
 
         // 9. Insira um estilo da sua escolha, a sugestão seria o display flex com flex - direction column
         form.style.display = "flex";
